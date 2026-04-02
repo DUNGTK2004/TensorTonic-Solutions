@@ -12,7 +12,6 @@ def euclidean_distance(x, y):
     d = 0
     if len(x) != len(y):
         raise ValueError
-    for i in range(len(x)):
-        d += (x[i] - y[i]) ** 2
-    d = np.sqrt(d)
+    
+    d = np.sqrt(np.sum((x-y) ** 2))
     return d
