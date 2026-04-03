@@ -6,7 +6,6 @@ def positional_encoding(seq_len, d_model, base=10000.0):
     Odd d_model -> last column is sin.
     """
     # Write code here
-    # print(pos_arr)
     freq_arr = np.arange(0, d_model).reshape(1, -1) *  np.ones((seq_len, 1))
 
     for i in range(seq_len):
