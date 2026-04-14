@@ -5,7 +5,7 @@ def image_histogram(image):
     """
     # Write code here
     image = np.asarray(image, dtype=int)
-    histogram = np.zeros(256)
+    histogram = [0 for i in range(256)]
     for i in range(image.shape[0]):
         for j in range(image.shape[1]):
             histogram[image[i][j]] += 1
